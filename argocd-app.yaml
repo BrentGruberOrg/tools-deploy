@@ -1,0 +1,20 @@
+project: brentgruberorg
+metadata:
+  name: argocd-app
+source:
+  repoURL: 'https://github.com/BrentGruberOrg/argo-deploy.git'
+  path: .
+  targetRevision: main
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: argocd
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  retry:
+    limit: 2
+    backoff:
+      duration: 5s
+      factor: 2
+      maxDuration: 3m0s
