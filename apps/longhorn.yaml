@@ -10,9 +10,9 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: ''
-    repoURL: 'https://charts.longhorn.io'
+    repoURL: 'https://charts.longhorn.io/longhorn'
     targetRevision: 1.4.1
-    chart: longhorn/longhorn
+    chart: longhorn
     helm:
       valueFiles:
         - values.yaml
