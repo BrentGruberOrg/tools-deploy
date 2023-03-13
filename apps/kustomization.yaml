@@ -3,5 +3,6 @@ resources:
   - argocd.yaml
   - doppler-operator.yaml
   - nginx.yaml
+  - longhorn.yaml
 
 namespace: argocd
