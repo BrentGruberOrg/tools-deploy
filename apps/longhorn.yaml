@@ -9,17 +9,11 @@ spec:
     namespace: longhorn-system
     server: 'https://kubernetes.default.svc'
   source:
-    path: 'longhorn'
-    repoURL: 'https://charts.longhorn.io'
-    targetRevision: 1.4.1
-    chart: longhorn
-    helm:
-      valueFiles:
-        - values.yaml
+    path: longhorn
+    repoURL: 'https://github.com/BrentGruberOrg/tools-deploy.git'
+    targetRevision: HEAD
   project: brentgruberorg
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
