@@ -1,4 +1,2 @@
 resources:
-  - argocd-app.yaml
-
-namespace: argocd
+  - ./apps
