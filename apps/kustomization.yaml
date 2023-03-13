@@ -1,5 +1,6 @@
 resources:
   - argocd.yaml
   - doppler-operator.yaml
+  - nginx.yaml
 
 namespace: argocd
