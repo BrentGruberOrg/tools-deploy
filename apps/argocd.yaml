@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: argo/argocd
-    repoURL: 'https://github.com/BrentGruberOrg/apps-deploy.git'
+    repoURL: 'https://github.com/BrentGruberOrg/tools-deploy.git'
     targetRevision: HEAD
   project: brentgruberorg
   syncPolicy:
