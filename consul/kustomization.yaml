@@ -1,0 +1,9 @@
+resources:
+  - namespace.yaml
+
+helmChartInflationGenerator:
+  - chartRepoUrl: https://helm.releases.hashicorp.com
+    chartHome: hashicorp
+    chartName: consul
+    releaseName: consul
+    releaseNamespace: consul
