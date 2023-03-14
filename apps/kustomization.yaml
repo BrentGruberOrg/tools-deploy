@@ -5,7 +5,9 @@ resources:
   - argoworkflows.yaml
   - consul.yaml
   - doppler-operator.yaml
-  - nginx.yaml
   - longhorn.yaml
+  - lgtm.yaml
+  - nginx.yaml
+  
 
 namespace: argocd

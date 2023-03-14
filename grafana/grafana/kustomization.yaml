@@ -1,0 +1,6 @@
+helmChartInflationGenerator:
+  - chartRepoUrl: https://grafana.github.io/helm-charts
+    chartHome: grafana
+    chartName: grafana
+    releaseName: grafana
+    releaseNamespace: monitoring
