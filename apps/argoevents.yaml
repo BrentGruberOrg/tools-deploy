@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-events
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: argo-events
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: argo/events
+    repoURL: 'https://github.com/BrentGruberOrg/tools-deploy.git'
+    targetRevision: HEAD
+  project: brentgruberorg
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
