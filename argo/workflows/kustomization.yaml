@@ -6,9 +6,9 @@ resources:
 # https://github.com/kubernetes-sigs/kustomize/issues/3265
 patches:
   - patch: |-
-      - op: add
+      - op: replace
         path: /spec/template/spec/containers/0/args/-
-        value: "--insecure --disable-auth"
+        value: ["server", "--insecure", "--disable-auth"]
     target:
       kind: Deployment
       name: argo-server
