@@ -7,3 +7,5 @@ helmChartInflationGenerator:
     chartName: consul
     releaseName: consul
     releaseNamespace: consul
+
+namespace: consul
