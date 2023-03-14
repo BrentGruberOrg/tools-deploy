@@ -6,7 +6,7 @@ resources:
   - consul.yaml
   - doppler-operator.yaml
   - longhorn.yaml
-  #- lgtm.yaml
+  - lgtm.yaml
   - nginx.yaml
   
 
