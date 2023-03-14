@@ -12,7 +12,7 @@ patches:
   - patch: |-
       - op: replace
         path: /apiVersion
-        value: ["policy/v1"]
+        value: policy/v1
     target:
       kind: PodDisruptionBudget
 
