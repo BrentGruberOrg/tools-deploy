@@ -3,4 +3,4 @@ helmChartInflationGenerator:
     chartName: grafana
     releaseName: grafana
     releaseNamespace: monitoring
-    valuesFile: values.yaml
+    values: values.yaml
