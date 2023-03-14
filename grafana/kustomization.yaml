@@ -1,5 +1,7 @@
+bases:
+  - ./grafana
+
 resources:
   - namespace.yaml
-  - ./grafana
 
 namespace: monitoring
