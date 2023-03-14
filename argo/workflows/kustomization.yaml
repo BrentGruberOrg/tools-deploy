@@ -8,7 +8,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/args/-
-        value: ["server", "--insecure", "--disable-auth"]
+        value: ["server", "--auth-mode=server"]
     target:
       kind: Deployment
       name: argo-server
