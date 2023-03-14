@@ -8,4 +8,12 @@ helmChartInflationGenerator:
     releaseName: consul
     releaseNamespace: consul
 
+patches:
+  - patch: |-
+      - op: replace
+        path: /apiVersion
+        value: ["policy/v1"]
+    target:
+      kind: PodDisruptionBudget
+
 namespace: consul
