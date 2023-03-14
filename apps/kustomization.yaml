@@ -3,7 +3,7 @@ resources:
   - argocd.yaml
   - argoevents.yaml
   - argoworkflows.yaml
-  - consul.yaml
+  #- consul.yaml
   - doppler-operator.yaml
   - longhorn.yaml
   - lgtm.yaml
