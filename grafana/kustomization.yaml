@@ -1,5 +1,6 @@
 bases:
   - ./grafana
+  - ./mimir
 
 resources:
   - namespace.yaml
