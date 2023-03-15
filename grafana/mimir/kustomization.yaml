@@ -1,6 +1,8 @@
 helmChartInflationGenerator:
   - chartRepoUrl: https://grafana.github.io/helm-charts
-    chartHome: 
     chartName: mimir-distributed
     releaseName: mimir
     releaseNamespace: monitoring
+    values: values.yaml
+
+namespace: monitoring
