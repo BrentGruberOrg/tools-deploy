@@ -8,3 +8,13 @@ nginx:
           - path: /
             pathType: Prefix
     tls:
+
+metaMonitoring:
+  serviceMonitor:
+    enabled: true
+  grafanaAgent:
+    enabled: true
+    installOperator: true
+    metrics:
+      additionalRemoteWriteConfigs:
+        - url: "http://mimir-nginx.monitoring.svc:80/api/v1/push"
