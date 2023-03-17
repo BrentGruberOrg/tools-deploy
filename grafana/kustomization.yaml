@@ -1,6 +1,7 @@
 bases:
   - ./grafana
   - ./mimir
+  - ./agent
 
 resources:
   - namespace.yaml
