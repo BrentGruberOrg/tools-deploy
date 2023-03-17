@@ -7,4 +7,4 @@ name: mimir-distributed
 namespace: monitoring
 releaseName: mimir
 repo: https://grafana.github.io/helm-charts
-values: values.yaml
+valuesFile: values.yaml
