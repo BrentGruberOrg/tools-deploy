@@ -1,3 +1,4 @@
 resources:
   - apps.yaml
+  - project.yaml
   - ../../base

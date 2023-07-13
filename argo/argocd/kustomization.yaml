@@ -1,10 +1,9 @@
 resources:
   - namespace.yaml
-  - ingress.yaml
-  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-  - project.yaml
+  #- ingress.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.7/manifests/install.yaml
 
-patchesStrategicMerge:
+patches:
   - patch.yaml
   - configmap.yaml
 
