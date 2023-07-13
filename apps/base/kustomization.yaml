@@ -1,13 +1,8 @@
 resources:
-  - apps.yaml
   - argocd.yaml
   - argoevents.yaml
   - argoworkflows.yaml
-  #- consul.yaml
+  - cilium.yaml
   - doppler-operator.yaml
   - longhorn.yaml
-  - lgtm.yaml
   - nginx.yaml
-  
-
-namespace: argocd

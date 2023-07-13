@@ -1,0 +1,19 @@
+generators:
+- helm-chart.yaml
+
+# Need to remove some keys from the cilium configmap
+patchesJson6902:
+  - target:
+      kind: 'ConfigMap'
+      name: 'cilium-config'
+      version: v1
+    patch: |-
+      - op: remove
+        path: "/data/ipam"
+      - op: remove
+        path: "/data/cluster-pool-ipv4-cidr"
+      - op: remove
+        path: "/data/cluster-pool-ipv4-mask-size"
+
+
+namespace: kube-system

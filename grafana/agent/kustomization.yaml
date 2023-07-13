@@ -1,7 +1,0 @@
-resources:
-- agentresources.yaml
-
-generators:
-- helmchart.yaml
-
-namespace: monitoring

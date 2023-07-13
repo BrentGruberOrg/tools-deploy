@@ -9,7 +9,7 @@ spec:
     namespace: argocd
     server: 'https://kubernetes.default.svc'
   source:
-    path: apps
+    path: apps/profiles/tools
     repoURL: 'https://github.com/BrentGruberOrg/tools-deploy.git'
     targetRevision: HEAD
   project: brentgruberorg

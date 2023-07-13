@@ -1,9 +1,0 @@
-bases:
-  - ./grafana
-  - ./mimir
-  - ./agent
-
-resources:
-  - namespace.yaml
-
-namespace: monitoring
