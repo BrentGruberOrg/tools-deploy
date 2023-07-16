@@ -4,6 +4,22 @@ containerRuntime:
 
 kubeProxyReplacement: strict
 
+eni:
+  enabled: true
+
+nodePort:
+  enabled: true
+externalIPs:
+  enabled: true
+
+ipam:
+  operator:
+    clusterPoolIPv4PodCIDR: "10.42.0.0/16"
+
+
+operator:
+  replicas: 1
+
 # Enable Hubble
 hubble:
   enabled: true
