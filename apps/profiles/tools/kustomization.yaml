@@ -1,4 +1,6 @@
 resources:
   - apps.yaml
-  - project.yaml
   - ../../base
+  - argoevents.yaml
+  - argoworkflows.yaml
+  - longhorn.yaml

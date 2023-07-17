@@ -1,7 +1,5 @@
 resources:
+  - project.yaml
   - argocd.yaml
-  - argoevents.yaml
-  - argoworkflows.yaml
   - doppler-operator.yaml
-  - longhorn.yaml
   - nginx.yaml
