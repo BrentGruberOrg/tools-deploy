@@ -11,7 +11,7 @@ spec:
   source:
     path: ''
     repoURL: 'https://helm.doppler.com'
-    targetRevision: 1.2.0
+    targetRevision: 1.2.7
     chart: doppler-kubernetes-operator
     helm:
       valueFiles:
