@@ -19,8 +19,8 @@ originRequest:
 # from the internet to cloudflared, run `cloudflared tunnel route dns <tunnel> <hostname>`.
 # E.g. `cloudflared tunnel route dns example-tunnel tunnel.example.com`.
 ingress:
-- hostname: 'argocd.mist.tools.brentgruber.com'
-  service: http://argocd-server.argocd.svc
+- hostname: '*.mist.tools.brentgruber.com'
+  service: http://ingress-nginx-controller.ingress-nginx.svc
 # - hostname: '*.joshcorp.co'
 #   service: https://ingress-nginx-controller
 # This rule matches any traffic which didn't match a previous rule, and responds with HTTP 404.
