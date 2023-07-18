@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: argocd.tools.brentgruber.com
+  - host: argocd.mist.tools.brentgruber.com
     http:
       paths:
       - path: /
