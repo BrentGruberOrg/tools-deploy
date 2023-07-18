@@ -2,4 +2,5 @@ resources:
   - project.yaml
   - argocd.yaml
   - doppler-operator.yaml
+  - cert-manager.yaml
   - nginx.yaml
