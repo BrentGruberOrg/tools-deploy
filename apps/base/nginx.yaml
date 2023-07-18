@@ -9,17 +9,11 @@ spec:
     namespace: ingress-nginx
     server: 'https://kubernetes.default.svc'
   source:
-    path: ''
-    repoURL: 'https://kubernetes.github.io/ingress-nginx'
-    targetRevision: 4.4.0
-    chart: ingress-nginx
-    helm:
-      valueFiles:
-        - values.yaml
+    path: ingress-nginx
+    repoURL: 'https://github.com/BrentGruberOrg/tools-deploy.git'
+    targetRevision: HEAD
   project: brentgruberorg
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
