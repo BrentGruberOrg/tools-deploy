@@ -64,7 +64,7 @@ spec:
           # kubectl create secret generic tunnel-credentials \
           # --from-file=credentials.json=/Users/yourusername/.cloudflared/<tunnel ID>.json
           # ```
-          secretName: cloudflare
+          secretName: cloudflare-secret
           items:
           - key: CLOUDFLARE_TUNNEL_CREDS
             path: credentials.json
