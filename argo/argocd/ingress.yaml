@@ -20,5 +20,5 @@ spec:
               name: https
   tls:
   - hosts:
-    - argocd.mist.tools.bomdemo.com
+    - argocd.mist.tools.brentgruber.com
     secretName: argocd-cert
