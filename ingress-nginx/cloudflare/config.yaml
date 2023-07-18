@@ -8,8 +8,6 @@ metrics: 0.0.0.0:2000
 # recommend using autoupdate.
 no-autoupdate: true
 
-originRequest:
-  noTLSVerify: true
 
 # The `ingress` block tells cloudflared which local service to route incoming
 # requests to. For more about ingress rules, see
@@ -21,7 +19,5 @@ originRequest:
 ingress:
 - hostname: '*.mist.tools.brentgruber.com'
   service: http://ingress-nginx-controller.ingress-nginx.svc
-# - hostname: '*.joshcorp.co'
-#   service: https://ingress-nginx-controller
 # This rule matches any traffic which didn't match a previous rule, and responds with HTTP 404.
 - service: http_status:404
