@@ -1,5 +1,5 @@
 # Name of the tunnel you want to run
-tunnel: mist-cluster
+tunnel: tools-cluster
 credentials-file: /etc/cloudflared/creds/credentials.json
 # Serves the metrics server under /metrics and the readiness server under /ready
 metrics: 0.0.0.0:2000
@@ -17,7 +17,7 @@ no-autoupdate: true
 # from the internet to cloudflared, run `cloudflared tunnel route dns <tunnel> <hostname>`.
 # E.g. `cloudflared tunnel route dns example-tunnel tunnel.example.com`.
 ingress:
-- hostname: '*.mist.tools.brentgruber.com'
+- hostname: '*.tools.brentgruber.com'
   service: http://ingress-nginx-controller.ingress-nginx.svc
 # This rule matches any traffic which didn't match a previous rule, and responds with HTTP 404.
 - service: http_status:404
