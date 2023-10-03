@@ -3,7 +3,7 @@ resources:
   - ingress.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.7/manifests/install.yaml
 
-patches:
+patchesStrategicMerge:
   - patch.yaml
   - configmap.yaml
 
