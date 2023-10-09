@@ -18,7 +18,3 @@ spec:
             name: argocd-server
             port:
               name: https
-  tls:
-  - hosts:
-    - argocd.tools.brentgruber.com
-    secretName: argocd-cert
