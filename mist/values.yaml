@@ -1,0 +1,21 @@
+ingress-nginx:
+  deploy: false
+
+http:
+  host: mist.tools.brentgruber.com
+  tlsClusterIssuer: letsencrypt-dev
+  tlsSecret: mist-tls
+
+victoriametrics:
+  enabled: false
+
+rabbitmq:
+  deploy: false
+
+mongodb:
+  deploy: false
+
+docker:
+  deploy: false
+
+  

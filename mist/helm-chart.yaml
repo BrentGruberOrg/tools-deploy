@@ -1,0 +1,11 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: mist
+name: mist-ce
+namespace: mist
+releaseName: mist
+repo: https://dl.mist.io/charts
+version: 4.7.1
+valuesFile: values.yaml

@@ -8,5 +8,6 @@ helmChartInflationGenerator:
     chartName: longhorn
     releaseName: longhorn
     releaseNamespace: longhorn-system
+    releaseVersion: v1.5.0
 
 namespace: longhorn-system
