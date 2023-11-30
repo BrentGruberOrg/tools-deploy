@@ -1,6 +1,7 @@
 resources:
   - namespace.yaml
   - ingress.yaml
+  - service-account.yaml
 
 helmChartInflationGenerator:
   - chartRepoUrl: https://charts.longhorn.io
