@@ -7,7 +7,7 @@ helmChartInflationGenerator:
   - chartRepoUrl: https://charts.longhorn.io
     chartHome: longhorn
     chartName: longhorn
-    chartVersion: v1.5.0
+    chartVersion: v1.4.4
     releaseName: longhorn
     releaseNamespace: longhorn-system
 
