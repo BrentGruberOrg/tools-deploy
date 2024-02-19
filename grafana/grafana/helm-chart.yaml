@@ -3,7 +3,7 @@ apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
   name: grafana
-name: grafana/grafana
+name: grafana
 namespace: grafana
 releaseName: grafana
 repo: https://grafana.github.io/helm-charts
