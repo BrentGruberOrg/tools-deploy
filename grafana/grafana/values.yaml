@@ -8,6 +8,8 @@ ingress:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 
 grafana.ini:
-  [auth.anonymous]
-  enabled = true
-  org_role = Viewer
+  auth:
+    anonymous:
+      enabled: true
+      org_name: Main Org.
+      org_role: Viewer
