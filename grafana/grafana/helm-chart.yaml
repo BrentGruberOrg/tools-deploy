@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: grafana
+name: grafana/grafana
+namespace: grafana
+releaseName: grafana
+repo: https://grafana.github.io/helm-charts
+valuesFile: values.yaml
