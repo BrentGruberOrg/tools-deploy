@@ -3,5 +3,6 @@ resources:
   - argocd.yaml
   - doppler-operator.yaml
   - cert-manager.yaml
+  - gitea.yaml
   - grafana.yaml
   - nginx.yaml
