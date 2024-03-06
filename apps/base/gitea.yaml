@@ -10,7 +10,7 @@ spec:
   source:
     path: '.'
     repoURL: 'https://github.com/BrentGruberOrg/gitea-deploy.git'
-    targetRevision: HEAD
+    targetRevision: main
   project: brentgruberorg
   syncPolicy:
     automated:
