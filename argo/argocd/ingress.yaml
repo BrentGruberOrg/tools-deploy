@@ -6,8 +6,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt
-  labels:
-    cloudflare.tunnel: true
 spec:
   rules:
   - host: argocd.tools.brentgruber.com
