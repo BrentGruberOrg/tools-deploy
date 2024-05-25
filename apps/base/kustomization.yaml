@@ -5,3 +5,4 @@ resources:
   - cert-manager.yaml
   - grafana.yaml
   - nginx.yaml
+  - mysql.yaml

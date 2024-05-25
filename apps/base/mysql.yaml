@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mysql
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: mysql
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: .
+    repoURL: 'https://github.com/BrentGruberOrg/mysql-deploy.git'
+    targetRevision: HEAD
+  project: brentgruberorg
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
