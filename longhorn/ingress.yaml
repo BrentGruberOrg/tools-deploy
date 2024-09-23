@@ -6,9 +6,10 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   rules:
-  - host: longhorn.tools.brentgruber.com
+  - host: longhorn.devops.brentgruber.com
     http:
       paths:
       - path: /
@@ -18,3 +19,7 @@ spec:
             name: longhorn-frontend
             port:
               name: http
+  tls:
+    - hosts:
+      - longhorn.devops.brentgruber.com
+      secretName: longhorn-cert

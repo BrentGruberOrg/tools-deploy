@@ -8,7 +8,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   rules:
-  - host: argocd.tools.brentgruber.com
+  - host: argocd.devops.brentgruber.com
     http:
       paths:
       - path: /
@@ -18,3 +18,8 @@ spec:
             name: argocd-server
             port:
               name: https
+
+  tls:
+    - hosts:
+      - argocd.devops.brentgruber.com
+      secretName: argocd-cert
